@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo/projetos.css">
+
+    <title>Adicionar Projeto</title>
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+          <a href="index.html"><img src="imagens/logo2.png" width="220px" height="44px"> </a>
+
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link text-light ml-3">CAPPeasy Home</a></li>
+            <li class="nav-item"><a href="projetos.html" class="nav-link text-light ml-3">Cadastrar Projeto</a></li>
+            <li class="nav-item"><a href="sobre.html" class="nav-link text-light ml-3">Quem Somos</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link text-light ml-3">Contato</a></li>
+            <li class="nav-item"><a href="minha_conta.html" class="nav-link text-light ml-3 mr-4">Minha Conta</a></li>
+            <li class="nav-item"><a href="#" class="btn btn-outline-light mr-4 mt-1">Entrar</a></li>
+            <li class="nav-item"><img src="imagens/fesp.png" width="100px" height="50px"></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    </header>
+
+    <section class="topo">
+      <h3 class="central text-white">Criar Projeto de Pesquisa</h3>
+    </section>
+
+    <section>
+      
+            <div class="container" style="width: 950px; margin: auto;">
+              
+                <h4 class="text-info">Descrição do Projeto</h4><br>
+                <form>
+                <div class="text-info">
+                  <h5>Título:</h5>
+                  <input type="text" name="titulo" class="dados borda">
+
+                  <h5>Instituição:</h5>
+                  <input type="text" name="instituição" class="dados borda">
+
+                  <h5>Grupo de Pesquisa:</h5>
+                  <select class="dados borda">
+                    <option value="nao"></option>
+                    <option value="nao">Agricultura Familiar</option>
+                    <option value="sim">Cidade e Meio Ambiente</option>
+                  </select>
+
+                  <h5>Grande Área do Conhecimento (CNPq):</h5>
+                  <input type="text" name="area" class="dados borda">
+
+                  <h5>Áreas Secundarias:</h5>
+                  <input type="text" name="areas_sec" class="dados borda">
+
+                  <h5>Palavras-chave:</h5>
+                  <input type="text" name="palavras_chave" class="dados borda">
+
+                  <h5>Início Previsto:</h5>
+                  <input type="date" name="inicio" class="dados borda">
+
+                  <h5>Término Previsto:</h5>
+                  <input type="date" name="termino" class="dados borda">
+
+                  <h5>Envolve pesquisa com seres humanos?</h5>
+                  <!-- <input type="radio" name="info" value="s" class="dados borda"> -->
+                  <select class="dados borda">
+                    <option value="nao">NÃO</option>
+                    <option value="sim">SIM</option>
+                  </select>
+
+                  <h5>Envolve pesquisa com animais?</h5>
+                  <select class="dados borda">
+                    <option value="nao">NÃO</option>
+                    <option value="sim">SIM</option>
+                  </select>
+
+                  <h5>Local de Execução na Rede:</h5>
+                  <input type="text" name="local" class="dados borda">
+
+                  <h5>O Projeto Tem Financiamento?</h5>
+                  <select class="dados borda">
+                    <option value="nao">NÃO</option>
+                    <option value="sim">SIM</option>
+                  </select>
+
+                  <h5>Valor Total:</h5>
+                  <input type="number" min="0.00" max="10000.00" step="0.01" name="valor" class="dados borda">
+
+                  <h5>Instituição de Fomento:</h5>
+                  <input type="text" name="instituição_fomento" class="dados borda">
+
+                  <h5>Objetivos(Gerais e Específicos):</h5>
+                  <textarea type="text" name="instituição_fomento" class="dados-area borda"></textarea>
+                </div>
+           
+                <div id="formulario">
+                  <div style="padding-top: 30px;" class="form-group">
+                    <label>Participante: </label>
+                    <input type="text" name="cpf[]" placeholder="CPF do Integrante" required>
+                    <select name="cargo[]" style="height: 35px; background: #f2f2f2; border-color: transparent; color: #757575;">
+                      <option value="1">Coordenador</option>
+                    </select>
+                    <button type="button" id="add-campo"> + </button>
+                  </div>
+                </div><br>
+
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary"> Criar </button>
+                </div>
+                </form>
+              </div>
+                
+    </section><br><br>
+
+    <hr><br>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-2">
+              <img src="imagens/fesp.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+              <p>
+                  <strong>Fundação Escola de Saúde Pública de Palmas</strong><br>
+                  Avenida LO 09, HM 06, Lote 11, s/n - Plano Diretor Sul, <br>
+                  Palmas - TO, CEP 77015-611
+              </p>
+              <p>
+                  <strong>Telefone(s):</strong><br>
+                  <a href="tel:63 3212-7904" target="_blank" onclick="open('tel:63 3212-7904')">(63) 3212-7904 / </a>
+                  <a href="tel:63 3212-7905" target="_blank" onclick="open('tel:63 3212-7905')">(63) 3212-7905 / </a>
+                  <a href="tel:63 3212-7906" target="_blank" onclick="open('tel:63 3212-7906')">(63) 3212-7906 / </a>
+                  <a href="tel:63 3212-7907" target="_blank" onclick="open('tel:63 3212-7907')">(63) 3212-7907</a>
+              </p>
+              <p>
+                  <strong>E-mail:</strong>
+                  <a href="mailto:fesppalmas@gmail.com" target="_blank" onclick="open('mailto:fesppalmas@gmail.com')">fesppalmas@gmail.com</a>,
+              </p>
+          </div>
+          <div class="col-md-3">
+              <img src="https://fesp.palmas.to.gov.br/images/logo_prefeitura_preferencial-01.png" alt="Logo FESP" class="img-fluid float-right" style="width: 80%">
+          </div>
+      </div>
+  </div>
+
+    <script>
+    var cont = 1;
+    //https://api.jquery.com/click/
+    $('#add-campo').click(function() {
+      cont++;
+      //https://api.jquery.com/append/
+      $('#formulario').append('<div style="padding-top: 30px; padding-left: 105px;" class="form-group" id="campo' + cont + '"> <label>Participante: </label><input type="text" name="cpf[]" placeholder="CPF do Integrante" required><select name="cargo[]" style="height: 35px; background: #f2f2f2; border-color: transparent; color: #757575;"><option value="1">Coordenador</option><option value="2">Professor</option><option value="3">Discente</option></select><button type="button" id="' + cont + '" class="btn-apagar"> - </button></div>');
+    });
+    $('form').on('click', '.btn-apagar', function() {
+      var button_id = $(this).attr("id");
+      $('#campo' + button_id + '').remove();
+    });
+  </script>
+
+    <!-- <div>
+      <input class="btn btn-outline-dark" type="submit" name="">
+    </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
